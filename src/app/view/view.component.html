@@ -1,0 +1,44 @@
+
+   
+
+<p align="right">
+    <button (click)="cl()" type="button" class="btn btn-primary " style="background-color: blue;">Add New Data</button>
+  </p>
+
+<table class="table">
+    <thead>
+      <tr >
+        <th scope="col">Id</th>
+        <th scope="col">Ranking</th>
+        <th scope="col">Name</th>
+        <th scope="col">Dob</th>
+        <th scope="col">Country</th>
+        <th scope="col">Score</th>
+        <th scope="col">Event</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of data">
+        <th scope="row">{{i._id}}</th>
+        <td>{{i.ranking}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.dob}}</td>
+        <td>{{i.country}}</td>
+        <td>{{i.score}}</td>
+        <td>{{i.event}}</td>
+        <td><button routerLink="/update/{{i._id}}"  type="button" class="btn btn-success">Edit</button></td>
+        <td><button (click)="delete(i._id)" type="button" class="btn btn-danger">Delete</button></td>
+        
+
+      </tr>
+      
+    </tbody>
+  </table>
+
+  
+
+
+  

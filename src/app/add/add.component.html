@@ -1,0 +1,45 @@
+<h1 class="text-center">Add New</h1>
+
+<p align="right">
+    <button (click)="cl()" type="button" class="btn btn-primary">View All</button>
+  </p>
+
+
+  <form style="width: 70%; margin-left: 15%;">
+  
+ 
+    <div class="form-group">
+      <label for="ranking">Ranking</label>
+      <input [(ngModel)]="ranking" [ngModelOptions]="{standalone:true}" type="email" class="form-control" placeholder="ranking">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name</label>
+      <input [(ngModel)]="name" [ngModelOptions]="{standalone:true}" type="email" class="form-control" placeholder="name">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Dob</label>
+      <input [(ngModel)]="dob" [ngModelOptions]="{standalone:true}" type="email" class="form-control" placeholder="dob">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Country</label>
+      <input [(ngModel)]="country" [ngModelOptions]="{standalone:true}" type="email" class="form-control" placeholder="country">
+    </div>
+
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Score</label>
+      <input [(ngModel)]="score" [ngModelOptions]="{standalone:true}" type="email" class="form-control" placeholder="score">
+    </div>
+
+    
+    
+
+    <div class="text-center">
+      <button  (click)="add()" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+   
+  </form>
+

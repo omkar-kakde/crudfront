@@ -1,0 +1,44 @@
+<h1 class="text-center">Edit Data</h1>
+
+<p align="right">
+    <button (click)="cl()" type="button" class="btn btn-primary">View All</button>
+  </p>
+
+
+<form>
+ 
+<div class="form-group">
+    <label for="ranking">Ranking</label>
+    <input [(ngModel)]="data.ranking" [ngModelOptions]="{standalone:true}" type="email" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input [(ngModel)]="data.name" [ngModelOptions]="{standalone:true}" type="email" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Dob</label>
+    <input [(ngModel)]="data.dob" [ngModelOptions]="{standalone:true}" type="email" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Country</label>
+    <input [(ngModel)]="data.country" [ngModelOptions]="{standalone:true}" type="email" class="form-control">
+  </div>
+
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Score</label>
+    <input [(ngModel)]="data.score" [ngModelOptions]="{standalone:true}" type="email" class="form-control">
+  </div>
+
+  
+  
+
+  <div class="text-center">
+    <button  (click)="update()" type="submit" class="btn btn-primary">Submit</button>
+  </div>
+ 
+</form>
+
